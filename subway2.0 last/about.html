@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <script src="lib/jquery.js"></script>
+</head>
+<body>
+    <div id="header" class="pos-abs clearfix">
+        <div class="wap">
+            <h1 class="iconfont ico0"><a href="">&#xe60a;</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="line.html">乘车查询</a>
+                        <ol class="slidedown">
+                            <li>行程查询</li>
+                            <li>站点与周边</li>
+                            <li>运营线路</li>
+                            <li>列车时刻表</li>
+                        </ol>
+                    </li>
+                    <li><a href="service.html">运营服务</a>
+                        <ol class="slidedown">
+                            <li>运营宣传片</li>
+                            <li>票务信息</li>
+                            <li>纪念票卡</li>
+                            <li>服务承诺</li>
+                            <li>失物招领</li>
+                            <li>乘客问答</li>
+                        </ol></li>
+                    <li><a href="news.html">新闻中心</a>
+                        <ol class="slidedown">
+                            <li>热点新闻</li>
+                            <li>聚焦两会</li>
+                            <li>关注疫情</li>
+                        </ol>
+                    </li>
+                    <li><a href="view.html">南昌旅游</a>
+                        <ol class="slidedown">
+                            <li>美丽南昌</li>
+                            <li>舌尖上的南昌</li>
+                        </ol>
+                    </li>
+                    <li><a href="notice.html">地铁公告</a>
+                        <ol class="slidedown">
+                            <li>地铁法规</li>
+                            <li>乘客守则</li>
+                            <li>文明出行倡议</li>
+                        </ol>
+                    </li>
+                    <li><a href="about.html">关于我们</a>
+                        <ol class="slidedown">
+                            <li>线网规划</li>
+                            <li>在建线路</li>
+                            <li>技术百科</li>
+                            <li>文艺地铁</li>
+                        </ol>
+                    </li>
+                </ul>
+                <script>
+                    $(function(){
+                        $('.nav>ul>li').mouseover(function(){
+                            $(this).children('ol').stop().slideDown(200)
+                        })
+                        $('.nav>ul>li').mouseout(function(){
+                            $(this).children('ol').stop().slideUp(200)
+                        })
+                    })
+                </script>
+            </div>
+            <div class="tools">
+                <div class="edition">
+                    <a href="">乘客版</a>
+                    <a href="">商务版</a>
+                </div>
+                <div class="handle">
+                    <a href="">
+                        <i class="iconfont ico">&#xe613;</i>
+                        <span>0791-96999</span>
+                    </a>
+                    <a href="">
+                        <i class="ico">EN</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="inform">
+            <ul>
+                <li>
+                    <p id="title">
+                        <i>秉</i>
+                        <i>承</i>
+                        <i>真</i>
+                        <i>诚</i>
+                        <i>&nbsp;</i>
+                        <i>&nbsp;</i>
+                        <i>服</i>
+                        <i>务</i>
+                        <i>大</i>
+                        <i>众</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#title i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+                <li><p id="essay">
+                        <i>台</i>
+                        <i>隍</i>
+                        <i>枕</i>
+                        <i>夷</i>
+                        <i>夏</i>
+                        <i>之</i>
+                        <i>交</i>
+                        <i>，</i>
+                        <i>宾</i>
+                        <i>主</i>
+                        <i>尽</i>
+                        <i>东</i>
+                        <i>南</i>
+                        <i>之</i>
+                        <i>美</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#essay i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="home1">
+        <h2>公司介绍</h2>
+        <div class="box clearfix">
+            <div><span class="iconfont">&#xe60a;</span><span>南昌地铁</span></div>
+            <div><p>南昌市轨道交通集团有限公司成立于2005年11月，为市政府直属国有独资企业，
+                负责西安城市快速轨道交通系统工程建设、运营管理和资源开发经营。
+                现设12个部门、2个子公司、2个分公司，员工9000余人。 
+                西安地铁是陕西省乃至西北地区基础设施建设史上规模最大的工程，
+                首条线路二号线北客站~会展中心段于2006年9月29日开工建...</p></div>
+        </div>
+    </div>
+
+    <div id="home2">
+        <h2>发展大事记</h2>
+        <div class="year">
+            <ul>
+                <li><span>2013</span></li>
+                <li><span>2014</span></li>
+                <li><span>2015</span></li>
+                <li><span>2016</span></li>
+                <li><span>2017</span></li>
+                <li><span>2018</span></li>
+                <li><span>2019</span></li>
+                <li><span>2020</span></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+        <div class="things clearfix">
+            <span class="iconfont">&#xe507;</span>
+            <span class="iconfont">&#xe7d8;</span>
+            <div>
+                <h3>01</h3>
+                <p>2017年1月16日，2号线丁-南区间（丁公路南站至南昌火车站）实现双向贯通，
+                    标志着2号线中心城区首个双向区间顺利贯通。</p>
+            </div>
+            <div>
+                <h3>02</h3>
+                <p>2017年2月12日，央视《新闻联播》头条新闻“撸起袖子加油干&nbsp;瞄准幸福感&nbsp;
+                    做实大民生”中关注南昌地铁2号线工程建设。</p>
+            </div>
+            <div>
+                <h3>03</h3>
+                <p>2017年3月10日，集团成功注册2017年第一期中期票据，金额20亿元，注册期两年。</p>
+            </div>
+            <div>
+                <h3>04</h3>
+                <p>2017年3月27日，2号线红谷中大道站至阳明公园站区间过江隧道顺利穿越赣江，
+                    同时，也刷新了赣江江底隧道长度纪录。</p>
+            </div>
+            <div>
+                <h3>05</h3>
+                <p>2017年5月26日，2号线信号控制系统入驻南昌地铁OCC控制中心，
+                    投入2号线首通段联调联试工作，标志着南昌地铁运营控制管理正式迎来“双屏”时代。</p>
+            </div>
+            <div>
+                <h3>06</h3>
+                <p>2017年9月15日，3号线首台盾构机由振兴大道站成功始发，
+                    标志着3号线正式步入盾构区间掘进阶段。</p>
+            </div>
+        </div>
+        <p><span></span><span></span></p>
+    </div>
+
+    <div id="home3">
+        <h2>也许,你还想了解</h2>
+        <div class="box">
+            <ul class="clearfix">
+                <li class="iconfont">&#xe69b;&nbsp;&nbsp;企业概况</li>
+                <li class="iconfont">&#xe698;&nbsp;&nbsp;集团动态</li>
+                <li class="iconfont">&#xe68d;&nbsp;&nbsp;招标采购</li>
+                <li class="iconfont">&#xe701;&nbsp;&nbsp;招贤纳士</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="box1">
+            <ul class="clearfix">
+                <li><p class="iconfont">&#xe644;&nbsp;&nbsp;人才招聘</p></li>
+                <li><p class="iconfont">&#xe68d;&nbsp;&nbsp;在线交流</p></li>
+                <li><p class="iconfont">&#xe611;&nbsp;&nbsp;院校招生</p></li>
+                <li><p class="iconfont">&#xe605;&nbsp;&nbsp;志愿者招募</p></li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <p class="iconfont">&#xe613;&nbsp;&nbsp;0791-96999&nbsp;&nbsp;
+            &#xe6c6;&nbsp;&nbsp;
+            &#xe614;&nbsp;&nbsp;
+            &#xe64a;&nbsp;&nbsp; &#xe6cb;</p>
+        <p class="iconfont">Copyright &copy;&nbsp;杨培锋&欧阳子怡
+            &nbsp;&nbsp;赣ICP备13007076号&nbsp;&nbsp; 
+            &#xe502;&nbsp;赣公网安备&nbsp;&nbsp;36010302000118号</p>
+    </div>
+    <div id="aside">
+        <ul>
+            <li><p class="iconfont">&#xe679;</p><div>行程查询</div></li>
+            <li><p class="iconfont">&#xe630;</p><div>线路图</div></li>
+            <li><p class="iconfont">&#xe642;</p><div>时刻表</div></li>
+            <li><p class="iconfont">&#xe613;</p><div>0791-96999</div></li>
+            <li><p class="iconfont">&#xe64a;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe68d;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe6cb;</p><div>二维码</div></li>
+            <li><a href="#"><p class="iconfont">&#xe519;</p></a><div>回到顶部</div></li>
+            <script>
+                $(function(){
+                    $("#aside ul li").each(function(index,element){
+                    element.click(function(){
+                        $("html,body").animate({scrollTop:0},
+                        {duration:500,easing:"swing"})
+                        return false
+                    })
+                })
+                })
+            </script>
+        </ul>
+        <script>
+            $(function(){
+                $('#aside>ul>li').mouseover(function(){
+                    $(this).children('div').stop().slideDown(200)
+                })
+                $('#aside>ul>li').mouseout(function(){
+                    $(this).children('div').stop().slideUp(200)
+                })
+            })
+            $(document).scroll(function(){
+                var scroH=$(document).scrollTop();
+                var aside=$("#aside")
+                if(scroH>700){
+                    aside.fadeIn(1000)
+                }
+                if(scroH<=700){
+                    aside.fadeOut(1000)
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

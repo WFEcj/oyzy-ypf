@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南昌旅游</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <script src="lib/jquery.js"></script>
+</head>
+<body>
+    <div id="header" class="pos-abs clearfix">
+        <div class="wap">
+            <h1 class="iconfont ico0"><a href="">&#xe60a;</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="line.html">乘车查询</a>
+                        <ol class="slidedown">
+                            <li>行程查询</li>
+                            <li>站点与周边</li>
+                            <li>运营线路</li>
+                            <li>列车时刻表</li>
+                        </ol>
+                    </li>
+                    <li><a href="service.html">运营服务</a>
+                        <ol class="slidedown">
+                            <li>运营宣传片</li>
+                            <li>票务信息</li>
+                            <li>纪念票卡</li>
+                            <li>服务承诺</li>
+                            <li>失物招领</li>
+                            <li>乘客问答</li>
+                        </ol></li>
+                    <li><a href="news.html">新闻中心</a>
+                        <ol class="slidedown">
+                            <li>热点新闻</li>
+                            <li>聚焦两会</li>
+                            <li>关注疫情</li>
+                        </ol>
+                    </li>
+                    <li><a href="view.html">南昌旅游</a>
+                        <ol class="slidedown">
+                            <li>美丽南昌</li>
+                            <li>舌尖上的南昌</li>
+                        </ol>
+                    </li>
+                    <li><a href="notice.html">地铁公告</a>
+                        <ol class="slidedown">
+                            <li>地铁法规</li>
+                            <li>乘客守则</li>
+                            <li>文明出行倡议</li>
+                        </ol>
+                    </li>
+                    <li><a href="about.html">关于我们</a>
+                        <ol class="slidedown">
+                            <li>线网规划</li>
+                            <li>在建线路</li>
+                            <li>技术百科</li>
+                            <li>文艺地铁</li>
+                        </ol>
+                    </li>
+                </ul>
+                <script>
+                    $(function(){
+                        $('.nav>ul>li').mouseover(function(){
+                            $(this).children('ol').stop().slideDown(200)
+                        })
+                        $('.nav>ul>li').mouseout(function(){
+                            $(this).children('ol').stop().slideUp(200)
+                        })
+                    })
+                </script>
+            </div>
+            <div class="tools">
+                <div class="edition">
+                    <a href="">乘客版</a>
+                    <a href="">商务版</a>
+                </div>
+                <div class="handle">
+                    <a href="">
+                        <i class="iconfont ico">&#xe613;</i>
+                        <span>0791-96999</span>
+                    </a>
+                    <a href="">
+                        <i class="ico">EN</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="inform">
+            <ul>
+                <li>
+                    <p id="title">
+                        <i>秉</i>
+                        <i>承</i>
+                        <i>真</i>
+                        <i>诚</i>
+                        <i>&nbsp;</i>
+                        <i>&nbsp;</i>
+                        <i>服</i>
+                        <i>务</i>
+                        <i>大</i>
+                        <i>众</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#title i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+                <li><p id="essay">
+                        <i>台</i>
+                        <i>隍</i>
+                        <i>枕</i>
+                        <i>夷</i>
+                        <i>夏</i>
+                        <i>之</i>
+                        <i>交</i>
+                        <i>，</i>
+                        <i>宾</i>
+                        <i>主</i>
+                        <i>尽</i>
+                        <i>东</i>
+                        <i>南</i>
+                        <i>之</i>
+                        <i>美</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#essay i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+            </ul>
+        </div>
+    </div>
+    <div id="home1">
+        <h3 class="iconfont">&#xed1d;&nbsp;&nbsp;盛夏南昌</h3>
+        <div class="box clearfix">
+            <span class="iconfont">&#xe506;</span>
+            <span class="iconfont">&#xe7d8;</span>
+            <p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+            <div class="img"><img src="img/艾溪湖.jpg" alt="" width="100%" height="100%"></div>
+            <div class="aside">
+                <h3>艾溪湖</h3>
+                <p>艾溪湖湿地公园是南昌市唯一的一块典型城市天然湿地，位于高新开发区艾溪湖东岸，
+                    于2007年9月开建至今，已栽种乔木5万余株，竹子4万余杆，草坪60万平方米，堆筑岛屿30余个;
+                    规划种植树木160余种，已栽种南酸枣树、苦练树、腊梅、紫荆、水杉、湿地松、小钢竹等120余个品种。<br>
+                    公园建成后，将逐步与天香园候鸟公园连为一体，成为鄱阳湖候鸟通道。
+                    而艾溪湖4.5平方公里的水面也将与2500余亩土地一起将构成自然、立体的森林湿地体系，
+                    成为南昌继梅岭之后的又一个天然绿肺。
+                </p>
+            </div>
+        </div>
+        <h3 class="iconfont">&#xed25;&nbsp;&nbsp;舌尖上的南昌</h3>
+        <div class="box clearfix">
+            <span class="iconfont">&#xe506;</span>
+            <span class="iconfont">&#xe7d8;</span>
+            <p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+            <div class="img"><img src="img/food.jpg" alt="" width="100%" height="100%"></div>
+            <div class="aside">
+                <h3>裕鼎鲜</h3>
+                <p>神仙钵饭&nbsp;&nbsp;趁热拌开的饭散发出浓郁的香味，已经忍不住挖上一勺往嘴里送。<br><br>
+                    紫苏汤梅&nbsp;&nbsp;浸泡了紫苏的杨梅吸收了满满的汁水，酸甜开胃。<br><br>
+                    桂花糖油粑粑&nbsp;&nbsp;桂花味扑鼻而来，软萌的团子摸样十分可爱。<br><br>
+                    桃花醉&nbsp;&nbsp;片片桃花落入碗中，酒唤醒了桃花的灵魂。花香味就着酒香味缓慢溢出，粉嫩的颜色也非常好看！
+                </p>
+            </div>
+        </div>
+
+        <h3 class="iconfont">&#xec7d;&nbsp;&nbsp;游乐南昌</h3>
+        <div class="box clearfix">
+            <span class="iconfont">&#xe506;</span>
+            <span class="iconfont">&#xe7d8;</span>
+            <p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+            <div class="img"><img src="img/南昌之星2.jpg" alt="" width="100%" height="100%"></div>
+            <div class="aside">
+                <h3>南昌之星</h3>
+                <p>南昌之星摩天轮屹立于赣江之滨,从秋水广场一直延伸到赣江新天地，这一段凝聚着江西的文化最精华，
+                    不管是佛文化、道文化以儒文化等都成为大多数游客选择的旅游胜地,其底蕴之深厚使得游客络绎不绝。<br><br>
+                    特别是在夏天，再加上赣江市民公园这一段路上绿柳成荫，使得这一路段是人们最喜欢纳凉之地。
+                    优越地理位置，众多在这纳凉的市民，这正是得天时、地利、人和，直接或间接的为摩天轮提供了不可缺少的前提。</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="footer">
+        <div class="box1">
+            <ul class="clearfix">
+                <li><p class="iconfont">&#xe644;&nbsp;&nbsp;人才招聘</p></li>
+                <li><p class="iconfont">&#xe68d;&nbsp;&nbsp;在线交流</p></li>
+                <li><p class="iconfont">&#xe611;&nbsp;&nbsp;院校招生</p></li>
+                <li><p class="iconfont">&#xe605;&nbsp;&nbsp;志愿者招募</p></li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <p class="iconfont">&#xe613;&nbsp;&nbsp;0791-96999&nbsp;&nbsp;
+            &#xe6c6;&nbsp;&nbsp;
+            &#xe614;&nbsp;&nbsp;
+            &#xe64a;&nbsp;&nbsp; &#xe6cb;</p>
+        <p class="iconfont">Copyright &copy;&nbsp;杨培锋&欧阳子怡
+            &nbsp;&nbsp;赣ICP备13007076号&nbsp;&nbsp; 
+            &#xe502;&nbsp;赣公网安备&nbsp;&nbsp;36010302000118号</p>
+    </div>
+    <div id="aside">
+        <ul>
+            <li><p class="iconfont">&#xe679;</p><div>行程查询</div></li>
+            <li><p class="iconfont">&#xe630;</p><div>线路图</div></li>
+            <li><p class="iconfont">&#xe642;</p><div>时刻表</div></li>
+            <li><p class="iconfont">&#xe613;</p><div>0791-96999</div></li>
+            <li><p class="iconfont">&#xe64a;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe68d;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe6cb;</p><div>二维码</div></li>
+            <li><a href="#"><p class="iconfont">&#xe519;</p></a><div>回到顶部</div></li>
+            <script>
+                $(function(){
+                    $("#aside ul li").each(function(index,element){
+                    element.click(function(){
+                        $("html,body").animate({scrollTop:0},
+                        {duration:500,easing:"swing"})
+                        return false
+                    })
+                })
+                })
+            </script>
+        </ul>
+        <script>
+            $(function(){
+                $('#aside>ul>li').mouseover(function(){
+                    $(this).children('div').stop().slideDown(200)
+                })
+                $('#aside>ul>li').mouseout(function(){
+                    $(this).children('div').stop().slideUp(200)
+                })
+            })
+            $(document).scroll(function(){
+                var scroH=$(document).scrollTop();
+                var aside=$("#aside")
+                if(scroH>700){
+                    aside.fadeIn(1000)
+                }
+                if(scroH<=700){
+                    aside.fadeOut(1000)
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

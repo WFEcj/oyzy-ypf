@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻中心</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="lib/jquery.js"></script>
+</head>
+<body>
+    <div id="header" class="pos-abs clearfix">
+        <div class="wap">
+            <h1 class="iconfont ico0"><a href="">&#xe60a;</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="line.html">乘车查询</a>
+                        <ol class="slidedown">
+                            <li>行程查询</li>
+                            <li>站点与周边</li>
+                            <li>运营线路</li>
+                            <li>列车时刻表</li>
+                        </ol>
+                    </li>
+                    <li><a href="service.html">运营服务</a>
+                        <ol class="slidedown">
+                            <li>运营宣传片</li>
+                            <li>票务信息</li>
+                            <li>纪念票卡</li>
+                            <li>服务承诺</li>
+                            <li>失物招领</li>
+                            <li>乘客问答</li>
+                        </ol></li>
+                    <li><a href="news.html">新闻中心</a>
+                        <ol class="slidedown">
+                            <li>热点新闻</li>
+                            <li>聚焦两会</li>
+                            <li>关注疫情</li>
+                        </ol>
+                    </li>
+                    <li><a href="view.html">南昌旅游</a>
+                        <ol class="slidedown">
+                            <li>美丽南昌</li>
+                            <li>舌尖上的南昌</li>
+                        </ol>
+                    </li>
+                    <li><a href="notice.html">地铁公告</a>
+                        <ol class="slidedown">
+                            <li>地铁法规</li>
+                            <li>乘客守则</li>
+                            <li>文明出行倡议</li>
+                        </ol>
+                    </li>
+                    <li><a href="about.html">关于我们</a>
+                        <ol class="slidedown">
+                            <li>线网规划</li>
+                            <li>在建线路</li>
+                            <li>技术百科</li>
+                            <li>文艺地铁</li>
+                        </ol>
+                    </li>
+                </ul>
+                <script>
+                    $(function(){
+                        $('.nav>ul>li').mouseover(function(){
+                            $(this).children('ol').stop().slideDown(200)
+                        })
+                        $('.nav>ul>li').mouseout(function(){
+                            $(this).children('ol').stop().slideUp(200)
+                        })
+                    })
+                </script>
+            </div>
+            <div class="tools">
+                <div class="edition">
+                    <a href="">乘客版</a>
+                    <a href="">商务版</a>
+                </div>
+                <div class="handle">
+                    <a href="">
+                        <i class="iconfont ico">&#xe613;</i>
+                        <span>0791-96999</span>
+                    </a>
+                    <a href="">
+                        <i class="ico">EN</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="inform">
+            <ul>
+                <li>
+                    <p id="title">
+                        <i>南</i>
+                        <i>昌</i>
+                        <i>N</i>
+                        <i>A</i>
+                        <i>N</i>
+                        <i>C</i>
+                        <i>H</i>
+                        <i>A</i>
+                        <i>N</i>
+                        <i>G</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#title i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+                <li><p class="time"></p></li>
+                <script>
+                    $(function(){
+                        setInterval("getTime();",1000);
+                    })
+                    function getTime(){
+                        var myDate = new Date();
+                        var date = myDate.toLocaleDateString();
+                        var hours = myDate.getHours();
+                        var minutes = myDate.getMinutes();
+                        var seconds = myDate.getSeconds();
+                        $(".inform .time").html(date+" "+hours+":"+minutes+":"+seconds);
+                    }
+                </script>
+            </ul>
+        </div>
+    </div>
+
+    <div id="home1">
+        <div class="box">
+            <h2>新闻中心</h2>
+            <span></span>
+            <i></i>
+            <div class="box1"></div>
+            <div class="box2 clearfix">
+                <div>
+                    <div>
+                        <img src="img/new1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="img">
+                        <img src="img/new3.jpg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+                <div>
+                    <p>6月2日下午，多位专家学者走进人民大会堂。总书记同每一位发言的专家学者作了交流。他们中的很多人，在这次座谈会之前就与总书记有过互动。四天前，钟南山院士和其他24位科技工作者刚刚收到习近平的回信。今年1月18日，84岁的钟南山挤上高铁餐车赶赴武汉。作为国家医疗与防控高级别专家组组长，他率先作出“肯定有人传人现象”的通报。去年11月，中央政治局就我国应急管理体系和能力建设进行第十九次集体学习。受邀作讲解的就是清华大学公共管理学院教授薛澜。三年前，在视察军事科学院时，习近平特意看望了在这里工作的22位“两院”院士，其中就包括李松。新冠肺炎疫情发生后，李松院士担纲科研攻关组药物研发专家组负责人。</p>
+                    <br>
+                    <br>
+                    <p>涉港国家安全立法是为了进一步巩固“一国两制”，将原有法律体系中的漏洞补上，更好地维护中国和中国公民的安全，任何外部势力都无权对香港事务进行任何形式的干涉。一些国家在这件事情上的反应是企图遏制中国发展。其他国家不能干涉涉港问题，因为这是中国的内政，事关中国和中国香港的安全和稳定，涉港国家安全立法非常具有正当性。看看最近发生在欧洲的事件，如西班牙等国，分离主义对于现代国家而言是完全不可以接受的。</p>
+                </div>
+            </div>
+            <div class="box3">
+                <img src="img/new2.jpg" alt="" width="100%" height="100%">
+            </div>
+            <p>热点新闻</p>
+        </div>
+    </div>
+    <div id="home2">
+        <h2>南昌新闻</h2>
+        <div class="img">
+        </div>
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="box-nan clearfix">
+            <div class="title">
+                <ul>
+                    <li>市长刘建洋来集团调研</li>
+                    <li>刘家富调研地铁安保工作</li>
+                    <li>集团召开2020年度财务工作会</li>
+                    <li>战“疫”女神—她们当之无愧</li>
+                    <li>“红色家书”在地铁大厦车站亮相</li>
+                    <li>扬清风 树正气</li>
+                </ul>
+            </div>
+            
+            <div class="essay">
+                <div>
+                    <p>刘建洋要求，轨道交通建设是方便市民出行、缓解交通拥堵的民生工程，
+                        要时刻绷紧运营安全的弦，层层落实责任，一丝不苟抓好线路的运营，
+                        不断提高运营水平，优化管理服务机制，确保守住运营安全底线。</p>
+                </div>
+                <div>
+                    <p>在地铁大厦站，刘家富登上试运行中的地铁列车，先后察看了地铁公安派出所、
+                        国体中心站、南昌西站、OCC控制中心，沿途详细了解地铁公安、
+                        地铁执法支队、地铁安检公司等各部门工作开展情况和装备配置情况。</p>
+                </div>
+                <div>
+                    <p>4月22日上午，集团召开2020年度财务工作会，集团及下属单位全体财务人员参加会议。
+                        会议首先通报了2019年财务工作检查情况，并对2020年度重点工作作重点汇报。
+                        随后，集团财务部对2019年度财务工作进行了总结，并对2020年度重点工作进行了部署。</p>
+                </div>
+                <div>
+                    <p>除了战疫一线，在车辆段、在食堂窗口、在办公楼…处处都有“她们”的身影，
+                        哪里工作需要，哪里就是她们的战场。疫情期间，她们冒着风险、不顾家人的反对，
+                        仍然坚守在自己的工作岗位上，默默奉献、无怨无悔，
+                        只为在此次“战疫”中贡献自己的一份绵薄之力。</p>
+                </div>
+                <div>
+                    <p>此次“红色家书”展分为“献身革命”、“报效国家”、“对党忠诚”、“崇尚荣誉”四个部分，
+                        共选取六位革命烈士的红色书信，辅以烈士生平简介和感人事例介绍，
+                        再现了革命烈士舍生取义、英勇报国的家国情怀。</p>
+                </div>
+                <div>
+                    <p>以梅兰竹菊为背景的名言警句装饰画将宽敞明亮的走廊装饰一新，
+                        俨然成了一道高雅靓丽的廉洁文化风景线。整个文化墙集文化宣传和警示教育于一体，
+                        成为了宣传廉洁地铁的一个重要阵地和窗口。</p>
+                </div>
+            </div>
+            <div class="line">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div id="home3">
+        <h2>也许,你还想了解</h2>
+        <div class="box">
+            <ul class="clearfix">
+                <li class="iconfont">&#xe69b;&nbsp;&nbsp;世界新闻</li>
+                <li class="iconfont">&#xe698;&nbsp;&nbsp;热点新闻</li>
+                <li class="iconfont">&#xe68d;&nbsp;&nbsp;聚焦两会</li>
+                <li class="iconfont">&#xe701;&nbsp;&nbsp;关注疫情</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="box1">
+            <ul class="clearfix">
+                <li><p class="iconfont">&#xe644;&nbsp;&nbsp;人才招聘</p></li>
+                <li><p class="iconfont">&#xe68d;&nbsp;&nbsp;在线交流</p></li>
+                <li><p class="iconfont">&#xe611;&nbsp;&nbsp;院校招生</p></li>
+                <li><p class="iconfont">&#xe605;&nbsp;&nbsp;志愿者招募</p></li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <p class="iconfont">&#xe613;&nbsp;&nbsp;0791-96999&nbsp;&nbsp;
+            &#xe6c6;&nbsp;&nbsp;
+            &#xe614;&nbsp;&nbsp;
+            &#xe64a;&nbsp;&nbsp; &#xe6cb;</p>
+        <p class="iconfont">Copyright &copy;&nbsp;杨培锋&欧阳子怡
+            &nbsp;&nbsp;赣ICP备13007076号&nbsp;&nbsp; 
+            &#xe502;&nbsp;赣公网安备&nbsp;&nbsp;36010302000118号</p>
+    </div>
+    <div id="aside">
+        <ul>
+            <li><p class="iconfont">&#xe679;</p><div>行程查询</div></li>
+            <li><p class="iconfont">&#xe630;</p><div>线路图</div></li>
+            <li><p class="iconfont">&#xe642;</p><div>时刻表</div></li>
+            <li><p class="iconfont">&#xe613;</p><div>0791-96999</div></li>
+            <li><p class="iconfont">&#xe64a;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe68d;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe6cb;</p><div>二维码</div></li>
+            <li><a href="#"><p class="iconfont">&#xe519;</p></a><div>回到顶部</div></li>
+            <script>
+                $(function(){
+                    $("#aside ul li").each(function(index,element){
+                    element.click(function(){
+                        $("html,body").animate({scrollTop:0},
+                        {duration:500,easing:"swing"})
+                        return false
+                    })
+                })
+                })
+            </script>
+        </ul>
+        <script>
+            $(function(){
+                $('#aside>ul>li').mouseover(function(){
+                    $(this).children('div').stop().slideDown(200)
+                })
+                $('#aside>ul>li').mouseout(function(){
+                    $(this).children('div').stop().slideUp(200)
+                })
+            })
+            $(document).scroll(function(){
+                var scroH=$(document).scrollTop();
+                var aside=$("#aside")
+                if(scroH>700){
+                    aside.fadeIn(1000)
+                }
+                if(scroH<=700){
+                    aside.fadeOut(1000)
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

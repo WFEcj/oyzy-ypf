@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乘车查询</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/line.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <script type="text/javascript" src="https://api.map.baidu.com/api?type=subway&v=1.0&ak=mp8pREDFlCXluHI3QEBWPTfzgGiAR8N3"> </script>
+    <script src="lib/jquery.js"></script>
+</head>
+<body>
+    <div id="header" class="pos-abs clearfix">
+        <div class="wap">
+            <h1 class="iconfont ico0"><a href="">&#xe60a;</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="line.html">乘车查询</a>
+                        <ol class="slidedown">
+                            <li>行程查询</li>
+                            <li>站点与周边</li>
+                            <li>运营线路</li>
+                            <li>列车时刻表</li>
+                        </ol>
+                    </li>
+                    <li><a href="service.html">运营服务</a>
+                        <ol class="slidedown">
+                            <li>运营宣传片</li>
+                            <li>票务信息</li>
+                            <li>纪念票卡</li>
+                            <li>服务承诺</li>
+                            <li>失物招领</li>
+                            <li>乘客问答</li>
+                        </ol></li>
+                    <li><a href="news.html">新闻中心</a>
+                        <ol class="slidedown">
+                            <li>热点新闻</li>
+                            <li>聚焦两会</li>
+                            <li>关注疫情</li>
+                        </ol>
+                    </li>
+                    <li><a href="view.html">南昌旅游</a>
+                        <ol class="slidedown">
+                            <li>美丽南昌</li>
+                            <li>舌尖上的南昌</li>
+                        </ol>
+                    </li>
+                    <li><a href="notice.html">地铁公告</a>
+                        <ol class="slidedown">
+                            <li>地铁法规</li>
+                            <li>乘客守则</li>
+                            <li>文明出行倡议</li>
+                        </ol>
+                    </li>
+                    <li><a href="about.html">关于我们</a>
+                        <ol class="slidedown">
+                            <li>线网规划</li>
+                            <li>在建线路</li>
+                            <li>技术百科</li>
+                            <li>文艺地铁</li>
+                        </ol>
+                    </li>
+                </ul>
+                <script>
+                    $(function(){
+                        $('.nav>ul>li').mouseover(function(){
+                            $(this).children('ol').stop().slideDown(200)
+                        })
+                        $('.nav>ul>li').mouseout(function(){
+                            $(this).children('ol').stop().slideUp(200)
+                        })
+                    })
+                </script>
+            </div>
+            <div class="tools">
+                <div class="edition">
+                    <a href="">乘客版</a>
+                    <a href="">商务版</a>
+                </div>
+                <div class="handle">
+                    <a href="">
+                        <i class="iconfont ico">&#xe613;</i>
+                        <span>0791-96999</span>
+                    </a>
+                    <a href="">
+                        <i class="ico">EN</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="inform">
+            <ul>
+                <li>
+                    <p id="title">
+                        <i>南</i>
+                        <i>昌</i>
+                        <i>地</i>
+                        <i>铁</i>
+                        <i>&nbsp;</i>
+                        <i>&nbsp;</i>
+                        <i>生</i>
+                        <i>活</i>
+                        <i>一</i>
+                        <i>脉</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#title i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+                <li><p id="essay">
+                        <i>落</i>
+                        <i>霞</i>
+                        <i>与</i>
+                        <i>与</i>
+                        <i>孤</i>
+                        <i>鹜</i>
+                        <i>齐</i>
+                        <i>飞</i>
+                        <i>，</i>
+                        <i>秋</i>
+                        <i>水</i>
+                        <i>共</i>
+                        <i>长</i>
+                        <i>天</i>
+                        <i>一</i>
+                        <i>色</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#essay i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+            </ul>
+        </div>
+    </div>
+
+    <div id="home1">
+        <h2>乘客查询</h2>
+        <p>让您的出行畅通无阻</p>
+        <div class="clearfix">
+            <div class="left1">
+                <div>
+                    <p>行程查询</p>
+                    <div class="select">
+                        <span>始发地</span>
+                        <select name="" id="">
+                            <option value="">--请选择--</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">--请选择--</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <span>终点站</span>
+                        <select name="" id="">
+                            <option value="">--请选择--</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">--请选择--</option>
+                        </select>
+                    </div>
+                    <input type="button" value="查询">
+                </div>
+                <div class="img">
+                    <img src="img/line.jpg" alt="" width="100%" height="100%">
+                </div>
+            </div>
+            <div class="right1">
+                <h3>基本票价政策</h3>
+                <h4>南昌地铁采用里程计价制</h4>
+                <p>起价2元可乘坐4公里，4至12公里范围内，每递增4公里增加1元；12至24公里范围内，每递增6公里增加1元；24至40公里范围内，每递增8公里增加1元；40至50公里范围内，每递增10公里增加1元，超过50公里之后，每递增20公里增加1元。</p>
+                <h3>购票方式</h3>
+                <h4>现金支付购票</h4>
+                <p>使用微信或支付宝在“客服中心”或自动售票机上进行购票。使用现金在车站的自动售票机或“客服中心”的半自动售票机上进行购票。自动售票机只接收1元硬币和5元、10元、20元纸币。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="home2">
+        <h2>运营线路图</h2>
+        <div id="map" >
+            <iframe src="map.html" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+
+    <div id="home3">
+        <h2>首末发车时刻表</h2>
+        <div class="wrap">
+            <ul class="clearfix">
+                <li class="iconfont">&#xe507;</li>
+                <li>
+                    <div></div>
+                    <p>一号线</p>
+                    <p class="iconfont">&#xe501;</p>
+                </li>
+                <li>
+                    <div></div>
+                    <p>二号线</p>
+                    <p class="iconfont">&#xe501;</p>
+                </li>
+                <li class="iconfont">&#xe7d8;</li>
+            </ul>
+        </div>
+        <div class="table">
+            <table border="0" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th class="iconfont">&#xe69b;</th>
+                    <th>车站</th>
+                    <th>首班车</th>
+                    <th>末班车</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>卫东站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>地铁大厦站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>秋水广场站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>滕王阁站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>万寿宫站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>八一馆站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>八一广场站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <tr>
+                    <th class="iconfont">&#xe503;</th>
+                    <th>丁公路北站</th>
+                    <th>6：00</th>
+                    <th>23：00</th>
+                  </tr>
+                  <script>
+                      $(function(){
+                          $("#home3 .table table").scroll(function(){
+
+                          })
+                      })
+                  </script>
+                </tbody>
+              </table>
+        </div>
+        <div class="help clearfix">
+            <ul>
+                <li><p class="iconfont">&#xe630;</p><i>列车线路图</i></li>
+                <li><p class="iconfont">&#xe642;</p><i>时刻表</i></li>
+                <li><p class="iconfont">&#xe684;</p><i>安全须知</i></li>
+                <li><p class="iconfont">&#xf00ef;</p><i>服务热线</i></li>
+                <li><p class="iconfont">&#xe624;</p><i>服务点</i></li>
+                <li><p class="iconfont">&#xf01ab;</p><i>设置</i></li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="box1">
+            <ul class="clearfix">
+                <li><p class="iconfont">&#xe644;&nbsp;&nbsp;人才招聘</p></li>
+                <li><p class="iconfont">&#xe68d;&nbsp;&nbsp;在线交流</p></li>
+                <li><p class="iconfont">&#xe611;&nbsp;&nbsp;院校招生</p></li>
+                <li><p class="iconfont">&#xe605;&nbsp;&nbsp;志愿者招募</p></li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <p class="iconfont">&#xe613;&nbsp;&nbsp;0791-96999&nbsp;&nbsp;
+            &#xe6c6;&nbsp;&nbsp;
+            &#xe614;&nbsp;&nbsp;
+            &#xe64a;&nbsp;&nbsp; &#xe6cb;</p>
+        <p class="iconfont">Copyright &copy;&nbsp;杨培锋&欧阳子怡
+            &nbsp;&nbsp;赣ICP备13007076号&nbsp;&nbsp; 
+            &#xe502;&nbsp;赣公网安备&nbsp;&nbsp;36010302000118号</p>
+    </div>
+    <div id="aside">
+        <ul>
+            <li><p class="iconfont">&#xe679;</p><div>行程查询</div></li>
+            <li><p class="iconfont">&#xe630;</p><div>线路图</div></li>
+            <li><p class="iconfont">&#xe642;</p><div>时刻表</div></li>
+            <li><p class="iconfont">&#xe613;</p><div>0791-96999</div></li>
+            <li><p class="iconfont">&#xe64a;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe68d;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe6cb;</p><div>二维码</div></li>
+            <li><a href="#"><p class="iconfont">&#xe519;</p></a><div>回到顶部</div></li>
+            <script>
+                $(function(){
+                    $("#aside ul li").each(function(index,element){
+                    element.click(function(){
+                        $("html,body").animate({scrollTop:0},
+                        {duration:500,easing:"swing"})
+                        return false
+                    })
+                })
+                })
+            </script>
+        </ul>
+        <script>
+            $(function(){
+                $('#aside>ul>li').mouseover(function(){
+                    $(this).children('div').stop().slideDown(200)
+                })
+                $('#aside>ul>li').mouseout(function(){
+                    $(this).children('div').stop().slideUp(200)
+                })
+            })
+            $(document).scroll(function(){
+                var scroH=$(document).scrollTop();
+                var aside=$("#aside")
+                if(scroH>700){
+                    aside.fadeIn(1000)
+                }
+                if(scroH<=700){
+                    aside.fadeOut(1000)
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

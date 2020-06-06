@@ -1,0 +1,216 @@
+#container .inform #essay{
+    text-align: center;
+    font-size: 24px;
+    color: #f5f5f5;
+    padding-top: 50px;
+}
+#container .inform #essay i{
+    display: none;
+}
+
+#home1{
+    position: relative;
+    width: 100%;
+}
+#home1>h2{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    padding-top: 60px;
+}
+#home1 .box{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #134672ef;
+}
+#home1 .box div:first-child{
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    left: 50px;
+    text-align: center;
+    padding-left: 60px;
+    line-height: 300px;
+    color: #f5f5f5;
+}
+#home1 .box div:first-child span{
+    font-size: 84px;
+}
+#home1 .box div:last-child{
+    height: 300px;
+    width: 800px;
+    position: absolute;
+    right: 0;
+
+}
+#home1 .box div:last-child p{
+    padding-top: 110px;
+    font-size: 16px;
+    text-indent: 2em;
+    width: 600px;
+    color: #f5f5f5;
+}
+
+#home2{
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+#home2>h2{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    padding-top: 60px;
+}
+#home2 .box{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 250px;
+}
+#home2 .box1{
+    background-color: #fff;
+    width: 5000px;
+    position: relative;
+    height: 5000px;
+    border-radius: 50%;
+    left: -115%;
+    border-top: 5px solid #8f4b2e;
+}
+#home2 .year ul{
+    top: 220px;
+    width: 1230px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -615px;
+}
+#home2 .year ul li{
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    float: left;
+    width: 80px;
+    height: 90px;
+    margin-left: 60px;
+    border-radius: 32px;
+    border: 10px #8b5037ea solid; 
+}
+#home2 .year ul li:nth-of-type(4){
+    top: -35px;
+}
+#home2 .year ul li:nth-of-type(5){
+    top: -35px;
+}
+#home2 .year ul li:nth-of-type(3){
+    top: -15px;
+}
+#home2 .year ul li:nth-of-type(6){
+    top: -15px;
+}
+#home2 .year ul li:nth-of-type(2){
+    top: 5px;
+}
+#home2 .year ul li:nth-of-type(7){
+    top: 5px;
+}
+#home2 .year ul li:nth-of-type(1){
+    top: 25px;
+}
+#home2 .year ul li:nth-of-type(8){
+    top: 25px;
+}
+#home2 .things{
+    position: relative;
+    margin: 0 auto;
+    top: 250px;
+    width: 1230px;
+    height: 500px;
+}
+#home2 .things div{
+    float: left;
+    width: 180px;
+    height: 250px;
+    margin-right: 25px;
+    background-color: #deab8a;
+}
+#home2 .things div h3{
+    font-size: 42px;
+    position: relative;
+    top: -30px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+}
+#home2 .things div p{
+    font-size: 16px;
+}
+#home2 .things>span{
+    text-align: center;
+    color: #afb4db;
+    font-size: 16px;
+    line-height: 50px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #003a6c;
+    border-radius: 50%;
+}
+#home2 .things span:nth-of-type(1){
+    top: 20%;
+    left: -70px;
+}
+#home2 .things span:nth-of-type(2){
+    top: 20%;
+    right: -50px;
+}
+#home2 p{
+    text-align: center;
+}
+#home2 p span{
+    margin-top: 50px;
+    display: inline-block;
+    margin-right: 20px;
+    width: 80px;
+    height: 10px;
+    background-color: #afb4db;
+    border-radius: 5px;
+}
+#home2 p span:first-child{
+    background-color: #003a6c;
+}
+#home3{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+#home3>h2{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    padding-top: 60px;
+    margin-bottom: 50px;
+}
+#home3 .box{
+    width: 1230px;
+    height: 300px;
+    margin: 0 auto;
+}
+#home3 .box ul{
+    width: 100%;
+    height: 100%;
+}
+#home3 .box ul li{
+    margin-right: 53px;
+    font-size: 24px;
+    float: left;
+    width: 250px;
+    height: 100px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 100px;
+}

@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南昌地铁主页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="lib/jquery.js"></script>
+</head>
+<body>
+    <div id="header" class="pos-abs clearfix">
+        <div class="wap">
+            <h1 class="iconfont ico0"><a href="">&#xe60a;</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="line.html">乘车查询</a>
+                        <ol class="slidedown">
+                            <li>行程查询</li>
+                            <li>站点与周边</li>
+                            <li>运营线路</li>
+                            <li>列车时刻表</li>
+                        </ol>
+                    </li>
+                    <li><a href="service.html">运营服务</a>
+                        <ol class="slidedown">
+                            <li>运营宣传片</li>
+                            <li>票务信息</li>
+                            <li>纪念票卡</li>
+                            <li>服务承诺</li>
+                            <li>失物招领</li>
+                            <li>乘客问答</li>
+                        </ol></li>
+                    <li><a href="news.html">新闻中心</a>
+                        <ol class="slidedown">
+                            <li>热点新闻</li>
+                            <li>聚焦两会</li>
+                            <li>关注疫情</li>
+                        </ol>
+                    </li>
+                    <li><a href="view.html">南昌旅游</a>
+                        <ol class="slidedown">
+                            <li>美丽南昌</li>
+                            <li>舌尖上的南昌</li>
+                        </ol>
+                    </li>
+                    <li><a href="notice.html">地铁公告</a>
+                        <ol class="slidedown">
+                            <li>地铁法规</li>
+                            <li>乘客守则</li>
+                            <li>文明出行倡议</li>
+                        </ol>
+                    </li>
+                    <li><a href="about.html">关于我们</a>
+                        <ol class="slidedown">
+                            <li>线网规划</li>
+                            <li>在建线路</li>
+                            <li>技术百科</li>
+                            <li>文艺地铁</li>
+                        </ol>
+                    </li>
+                </ul>
+                <script>
+                    $(function(){
+                        $('.nav>ul>li').mouseover(function(){
+                            $(this).children('ol').stop().slideDown(200)
+                        })
+                        $('.nav>ul>li').mouseout(function(){
+                            $(this).children('ol').stop().slideUp(200)
+                        })
+                    })
+                </script>
+            </div>
+            <div class="tools">
+                <div class="edition">
+                    <a href="">乘客版</a>
+                    <a href="">商务版</a>
+                </div>
+                <div class="handle">
+                    <a href="">
+                        <i class="iconfont ico">&#xe613;</i>
+                        <span>0791-96999</span>
+                    </a>
+                    <a href="">
+                        <i class="ico">EN</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="inform">
+            <ul>
+                <li>
+                    <p id="title">
+                        <i>南</i>
+                        <i>昌</i>
+                        <i>N</i>
+                        <i>A</i>
+                        <i>N</i>
+                        <i>C</i>
+                        <i>H</i>
+                        <i>A</i>
+                        <i>N</i>
+                        <i>G</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#title i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+                <li><p class="time"></p></li>
+                <script>
+                    $(function(){
+                        setInterval("getTime();",1000);
+                    })
+                    function getTime(){
+                        var myDate = new Date();
+                        var date = myDate.toLocaleDateString();
+                        var hours = myDate.getHours();
+                        var minutes = myDate.getMinutes();
+                        var seconds = myDate.getSeconds();
+                        $(".inform .time").html(date+" "+hours+":"+minutes+":"+seconds);
+                    }
+                </script>
+            </ul>
+        </div>
+    </div>
+    <div id="home1">
+        <div class="search">
+            <p>乘车指南-让你的行程畅通无阻</p>
+            <div class="form">
+                <select name="" id="">
+                    <option value="">--请选择或输入站点--</option>
+                    <option value="">双港站</option>
+                    <option value="">孔目湖站</option>
+                    <option value="">长江路站</option>
+                    <option value="">珠江路站</option>
+                    <option value="">庐山南大道站</option>
+                    <option value="">绿茵路站</option>
+                    <option value="">卫东站</option>
+                    <option value="">地铁大厦站</option>
+                    <option value="">秋水广场站</option>
+                    <option value="">滕王阁站</option>
+                    <option value="">万寿宫站</option>
+                    <option value="">八一馆站</option>
+                    <option value="">八一广场站</option>
+                    <option value="">丁公路北站</option>
+                    <option value="">师大南路站</option>
+                    <option value="">彭家桥站</option>
+                    <option value="">谢家村站</option>
+                    <option value="">青山湖大道站</option>
+                    <option value="">高新大道站</option>
+                    <option value="">艾溪湖西站</option>
+                    <option value="">艾溪湖东站</option>
+                    <option value="">太子殿站</option>
+                    <option value="">奥体中心站</option>
+                    <option value="">瑶湖西站</option>
+                </select>
+                <input type="button">
+                <select name="" id="">
+                    <option value="">--请选择或输入站点--</option>
+                    <option value="">双港站</option>
+                    <option value="">孔目湖站</option>
+                    <option value="">长江路站</option>
+                    <option value="">珠江路站</option>
+                    <option value="">庐山南大道站</option>
+                    <option value="">绿茵路站</option>
+                    <option value="">卫东站</option>
+                    <option value="">地铁大厦站</option>
+                    <option value="">秋水广场站</option>
+                    <option value="">滕王阁站</option>
+                    <option value="">万寿宫站</option>
+                    <option value="">八一馆站</option>
+                    <option value="">八一广场站</option>
+                    <option value="">丁公路北站</option>
+                    <option value="">师大南路站</option>
+                    <option value="">彭家桥站</option>
+                    <option value="">谢家村站</option>
+                    <option value="">青山湖大道站</option>
+                    <option value="">高新大道站</option>
+                    <option value="">艾溪湖西站</option>
+                    <option value="">艾溪湖东站</option>
+                    <option value="">太子殿站</option>
+                    <option value="">奥体中心站</option>
+                    <option value="">瑶湖西站</option>
+                </select>
+                <input type="button" value="查询">
+            </div>
+            <p class="tip">温馨提示:乘车查询不包含换乘时间！</p>
+        </div>
+        <div class="wrap">
+            <ul class="clearfix">
+                <li class="iconfont">&#xe507;</li>
+                <li>
+                    <div></div>
+                    <p>一号线</p>
+                    <p class="iconfont">&#xe501;</p>
+                </li>
+                <li>
+                    <div></div>
+                    <p>二号线</p>
+                    <p class="iconfont">&#xe501;</p>
+                </li>
+                <li class="iconfont">&#xe7d8;</li>
+            </ul>
+            <ol class="line clearfix">
+                <li><i><a href="">双港站</a></i></li>
+                <li><i><a href="">孔目湖站</a></i></li>
+                <li><i><a href="">长江路站</a></i></li>
+                <li><i><a href="">珠江路站</a></i></li>
+                <li><i><a href="">庐山南大道站</a></i></li>
+                <li><i><a href="">绿茵路站</a></i></li>
+                <li><i><a href="">卫东站</a></i></li>
+                <li><i><a href="">地铁大厦站</a></i></li>
+                <li><i><a href="">秋水广场站</a></i></li>
+                <li><i><a href="">滕王阁站</a></i></li>
+                <li><i><a href="">万寿宫站</a></i></li>
+                <li><i><a href="">八一馆站</a></i></li>
+            </ol>
+        </div>
+    </div>
+    <div id="home2">
+        <h2>出行微服务</h2>
+        <p class="essay">地铁触动南昌的微光，保障每一次出行顺畅</p>
+        <p class="ico1 iconfont">&#xe503;</p>
+        <p class="essay2">每日乘客</p>
+        <h3>
+            <b>288454</b>
+            <span>乘次</span>
+        </h3>
+        <div class="help clearfix">
+            <ul>
+                <li><p class="iconfont">&#xe630;</p></li>
+                <li><p class="iconfont">&#xe642;</p></li>
+                <li><p class="iconfont">&#xe684;</p></li>
+                <li><p class="iconfont">&#xf00ef;</p></li>
+                <li><p class="iconfont">&#xe624;</p></li>
+                <li><p class="iconfont">&#xf01ab;</p></li>
+            </ul>
+        </div>
+        <p class="ico iconfont">&#xe630;</p>
+    </div>
+    <div id="home3">
+        <p class="title">等待继享受</p>
+        <p class="essay">每一站都可以，让等待成为一种期待</p>
+        <div class="content">
+            <div class="left-con">
+                <div class="top-con">
+                    <p class="iconfont">&#xe701;</p>
+                    <p>车站内部信息查询</p>
+                </div>
+                <div class="bottom-con">
+                    <p class="iconfont">&#xe785;</p>
+                    <p>周边公共设施</p>
+                </div>
+            </div>
+            <div class="right-con">
+                <img src="img/wait.jpg" alt="地铁等待" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+    <div id="home4">
+        <p class="iconfont"></p>
+        <p class="title">乘坐即旅行</p>
+        <p>我们致力于提示出行的美好</p>
+        <ul class="clearfix">
+           <li class="active"></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+        </ul>
+        <div class="content clearfix">
+            <div>
+                <div>
+                    <img src="img/八一大道.jpg" alt="" width="100%" height="100%">
+                </div>
+                <p class="tit">八一大道</p>
+                <p class="ess">著名的南昌八一大道原名安石路，始建于民国17年，是在拆除城墙的基础上修筑的...<br>
+                                </p>
+            </div>
+            <div>
+                <div>
+                    <img src="img/南昌之星1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <p class="tit">南昌之星</p>
+                <p class="ess">“南昌之星”摩天轮，又名南昌之星，位于江西省南昌市红谷滩区红角洲赣江边上的赣江市民公园。<br>
+                            </p>
+            </div>
+            <div>
+                <div>
+                    <img src="img/滕王阁.jpg" alt="" width="100%" height="100%">
+                </div>
+                <p class="tit">滕王阁</p>
+                <p class="ess">滕王阁，江南三大名楼之一，因初唐诗人王勃诗句“落霞与孤鹜齐飞，秋水共长天一色”而流芳后世。<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="box1">
+            <ul class="clearfix">
+                <li><p class="iconfont">&#xe644;&nbsp;&nbsp;人才招聘</p></li>
+                <li><p class="iconfont">&#xe68d;&nbsp;&nbsp;在线交流</p></li>
+                <li><p class="iconfont">&#xe611;&nbsp;&nbsp;院校招生</p></li>
+                <li><p class="iconfont">&#xe605;&nbsp;&nbsp;志愿者招募</p></li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <p class="iconfont">&#xe613;&nbsp;&nbsp;0791-96999&nbsp;&nbsp;
+            &#xe6c6;&nbsp;&nbsp;
+            &#xe614;&nbsp;&nbsp;
+            &#xe64a;&nbsp;&nbsp; &#xe6cb;</p>
+        <p class="iconfont">Copyright &copy;&nbsp;杨培锋&欧阳子怡
+            &nbsp;&nbsp;赣ICP备13007076号&nbsp;&nbsp; 
+            &#xe502;&nbsp;赣公网安备&nbsp;&nbsp;36010302000118号</p>
+    </div>
+    <div id="aside">
+        <ul>
+            <li><p class="iconfont">&#xe679;</p><div>行程查询</div></li>
+            <li><p class="iconfont">&#xe630;</p><div>线路图</div></li>
+            <li><p class="iconfont">&#xe642;</p><div>时刻表</div></li>
+            <li><p class="iconfont">&#xe613;</p><div>0791-96999</div></li>
+            <li><p class="iconfont">&#xe64a;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe68d;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe6cb;</p><div>二维码</div></li>
+            <li><a href="#"><p class="iconfont">&#xe519;</p></a><div>回到顶部</div></li>
+            <script>
+                $(function(){
+                    $("#aside ul li").each(function(index,element){
+                    $(this).click(function(){
+                        $("html,body").animate({scrollTop:0},
+                        {duration:500,easing:"swing"})
+                        return false
+                    })
+                })
+                })
+            </script>
+        </ul>
+        <script>
+            $(function(){
+                $('#aside>ul>li').mouseover(function(){
+                    $(this).children('div').stop().slideDown(200)
+                })
+                $('#aside>ul>li').mouseout(function(){
+                    $(this).children('div').stop().slideUp(200)
+                })
+            })
+            $(document).scroll(function(){
+                var scroH=$(document).scrollTop();
+                var aside=$("#aside")
+                if(scroH>700){
+                    aside.fadeIn(1000)
+                }
+                if(scroH<=700){
+                    aside.fadeOut(1000)
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

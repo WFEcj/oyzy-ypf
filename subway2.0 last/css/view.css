@@ -1,0 +1,111 @@
+#container .inform #essay{
+    text-align: center;
+    font-size: 24px;
+    color: #f5f5f5;
+    padding-top: 50px;
+}
+#container .inform #essay i{
+    display: none;
+}
+
+#home1{
+    position: relative;
+    width: 100%;
+    height: 2400px;
+}
+#home1>h2{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+#home1>h3{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 36px;
+    font-weight: 400px;
+    padding-bottom: 80px;
+}
+#home1 .box{
+    position: relative;
+    width: 1230px;
+    height: 390px;
+    margin: 100px auto;
+}
+#home1 .box>p{
+    text-align: center;
+    position: relative;
+    top: -150px;
+}
+#home1 .box>span{
+    font-size: 24px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #281f1d;
+    background-color: #f36c21;
+    top: 50%;
+    margin-top: -80px;
+    text-align: center;
+    border-radius: 50%;
+}
+#home1 .box>span:first-child{
+    left: -80px;
+}
+#home1 .box>span:nth-of-type(2){
+    right: 0;
+    margin-right: -80px;
+}
+#home1 .box>p span:first-child{
+    background-color: #ffc20e;
+}
+#home1 .box>p span{
+    border-radius: 20px;
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 15px;
+    background-color: #f36c21;
+}
+#home1 .box:nth-of-type(1){
+    background-color: #78cdd1;
+}
+#home1 .box:nth-of-type(2){
+    background-color: #ffce7b;
+}
+#home1 .box .img{
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    top: -80px;
+    left: 50px;
+}
+#home1 .box .img img{
+    border-radius: 20px;
+}
+#home1 .box .aside{
+    width: 600px;
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+#home1 .box .aside h3{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #281f1d;
+    font-size: 26px;
+    font-family: SimHei;
+}
+#home1 .box .aside p{
+    padding: 0 50px;
+    color: #281f1d;
+    font-size: 18px;
+    font-family: KaiTi;
+}
+#home1 .box:nth-of-type(3){
+    background-color: #94d6da;
+}

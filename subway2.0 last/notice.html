@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地铁公告</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/notice.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <script src="lib/jquery.js"></script>
+</head>
+<body>
+    <div id="header" class="pos-abs clearfix">
+        <div class="wap">
+            <h1 class="iconfont ico0"><a href="">&#xe60a;</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="line.html">乘车查询</a>
+                        <ol class="slidedown">
+                            <li>行程查询</li>
+                            <li>站点与周边</li>
+                            <li>运营线路</li>
+                            <li>列车时刻表</li>
+                        </ol>
+                    </li>
+                    <li><a href="service.html">运营服务</a>
+                        <ol class="slidedown">
+                            <li>运营宣传片</li>
+                            <li>票务信息</li>
+                            <li>纪念票卡</li>
+                            <li>服务承诺</li>
+                            <li>失物招领</li>
+                            <li>乘客问答</li>
+                        </ol></li>
+                    <li><a href="news.html">新闻中心</a>
+                        <ol class="slidedown">
+                            <li>热点新闻</li>
+                            <li>聚焦两会</li>
+                            <li>关注疫情</li>
+                        </ol>
+                    </li>
+                    <li><a href="view.html">南昌旅游</a>
+                        <ol class="slidedown">
+                            <li>美丽南昌</li>
+                            <li>舌尖上的南昌</li>
+                        </ol>
+                    </li>
+                    <li><a href="notice.html">地铁公告</a>
+                        <ol class="slidedown">
+                            <li>地铁法规</li>
+                            <li>乘客守则</li>
+                            <li>文明出行倡议</li>
+                        </ol>
+                    </li>
+                    <li><a href="about.html">关于我们</a>
+                        <ol class="slidedown">
+                            <li>线网规划</li>
+                            <li>在建线路</li>
+                            <li>技术百科</li>
+                            <li>文艺地铁</li>
+                        </ol>
+                    </li>
+                </ul>
+                <script>
+                    $(function(){
+                        $('.nav>ul>li').mouseover(function(){
+                            $(this).children('ol').stop().slideDown(200)
+                        })
+                        $('.nav>ul>li').mouseout(function(){
+                            $(this).children('ol').stop().slideUp(200)
+                        })
+                    })
+                </script>
+            </div>
+            <div class="tools">
+                <div class="edition">
+                    <a href="">乘客版</a>
+                    <a href="">商务版</a>
+                </div>
+                <div class="handle">
+                    <a href="">
+                        <i class="iconfont ico">&#xe613;</i>
+                        <span>0791-96999</span>
+                    </a>
+                    <a href="">
+                        <i class="ico">EN</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="inform">
+            <ul>
+                <li>
+                    <p id="title">
+                        <i>南</i>
+                        <i>昌</i>
+                        <i>地</i>
+                        <i>铁</i>
+                        <i>&nbsp;</i>
+                        <i>&nbsp;</i>
+                        <i>生</i>
+                        <i>活</i>
+                        <i>一</i>
+                        <i>脉</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#title i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+                <li><p id="essay">
+                        <i>落</i>
+                        <i>霞</i>
+                        <i>与</i>
+                        <i>与</i>
+                        <i>孤</i>
+                        <i>鹜</i>
+                        <i>齐</i>
+                        <i>飞</i>
+                        <i>，</i>
+                        <i>秋</i>
+                        <i>水</i>
+                        <i>共</i>
+                        <i>长</i>
+                        <i>天</i>
+                        <i>一</i>
+                        <i>色</i>
+                    </p>
+                </li>
+                <script>
+                    $(function(){
+                        $("#essay i").each(function(i){
+                            i=i%4+1;
+                            $(this).fadeIn(i*1000)
+                        })
+                    })
+                </script>
+            </ul>
+        </div>
+    </div>
+
+
+
+     <!--内容部分-->
+  <div class="content type_area">
+    <div class="show_aside clearfix">
+      <!--轮播图-->
+      <div class="slideshow">
+        <a href="#" class="arrow_l">《</a>
+        <a href="#" class="arrow_r">》</a>
+        <ul class="imgs">
+          <li><a href="#"><img src="img/not1.jpg" alt="1"></a></li>
+          <li><a href="#"><img src="img/not2.jpg" alt="1"></a></li>
+          <li><a href="#"><img src="img/not3.jpg" alt="1"></a></li>
+          <li><a href="#"><img src="img/not4.jpg" alt="1"></a></li>
+        </ul>
+        <ul class="dots clearfix"></ul>
+      </div>
+      <div class="essay">
+        <ul>
+          <li><a href="#">最新公司公告</a></li>
+          <li><a href="#">集团召开2010年度乘客满意度调查报告会</a></li>
+          <li><a href="#">最深的牵挂——习近平的两会时间</a></li>
+          <li><a href="#">政府工作报告共补充修改89处 2/3涉及民生和就业</a></li>
+          <li><a href="#">实时更新：新型冠状病毒肺炎全国疫情地图</a></li>
+          <li><a href="#">新冠灭活疫苗最快今年底或明年初上市</a></li>
+          <li><a href="#">银河系究竟长啥样？17年探索揭开面纱</a></li>
+          <li><a href="#">6月这些新规实施！涉及你的医、食、住、行！</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mp4_aside clearfix">
+      <aside>
+        <div class="essay">
+          <br><br>
+          <p class="essay_p">集团召开2019年度乘客满意度调查报告会</p><br>
+          <p class="p">5月26日下午，集团召开2019年度乘客满意度调查报告会，集团党委副书记、总经理万先逵出席，集团党委委员、工会主席阎志强主持会议，副总经理贺斯进以及相关部门（单位）负责人参加。<br>
+            <br>会议对过去三年南昌地铁运营服务乘客满意度项目进展进行了整体汇报，包括满意度调查项目概况、项目短板分析建议以及对南昌地铁未来的拓展建议三个方面，参会领导和相关部门（单位）负责人经充分讨论研究，针对报告中指出的问题进行了剖析，并提出相应的整改措施和目标计划。<br>
+            <br>万先逵指出，地铁运营服务水平提升是集团实现品牌价值的重要前提，我们要高度重视满意度调查收集的意见和建议，不断提升运营服务水平；要关注乘客需求，把乘客需求当作我们未来的追求、方向和目标。</p>
+        </div>
+      </aside>
+      <div class="mp4">
+        <p>地铁宣传片：视频</p>
+        <video src="video/subway.mp4" autoplay loop muted controls object-fit: cover width="100%" height="100%"></video>
+      </div>
+    </div>
+    <div class="essay_aside clearfix">
+      <div class="image"><img src="img/not5.jpg" alt="" width="100%" height="100%"></div>
+      <div class="essay_aside_list">
+        <p>2020年3月20日，由京港地铁联合国家图书馆、喜马拉雅主办的M地铁·图书馆家庭朗读大赛正式收官。据悉，有37个家庭的朗读作品在超过10.5万条参赛音频作品中脱颖而出，相应参赛家庭分别获得“锦鲤家庭”、“特色家庭”、“温情家庭”、“人气家庭”的奖项。受新冠肺炎疫情影响，为保障公众的健康，大赛采取线上H5的形式公布最终结果。</p>
+      </div>
+      <nav>
+        <ul class="clearfix">
+          <li>1</li>
+          <li>2</li>
+          <li>...</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <script>
+    var imgs=document.querySelector(".imgs")
+    var dots=document.querySelector(".dots")
+    var slideshow=document.querySelector(".slideshow")
+    for(var i=0;i<imgs.children.length;i++){
+        var li=document.createElement('li')
+        li.setAttribute('data-index',i)
+        dots.appendChild(li)
+        li.addEventListener('click',function(){
+            for(var i=0;i<dots.children.length;i++){
+                dots.children[i].style.backgroundColor="gray"
+                this.style.backgroundColor="red"
+                var index=this.getAttribute('data-index')
+                var imgWidth=slideshow.offsetWidth
+                /**轮播图 */
+                animate(imgs,-index*imgWidth)
+
+            }
+        })
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="box1">
+            <ul class="clearfix">
+                <li><p class="iconfont">&#xe644;&nbsp;&nbsp;人才招聘</p></li>
+                <li><p class="iconfont">&#xe68d;&nbsp;&nbsp;在线交流</p></li>
+                <li><p class="iconfont">&#xe611;&nbsp;&nbsp;院校招生</p></li>
+                <li><p class="iconfont">&#xe605;&nbsp;&nbsp;志愿者招募</p></li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <p class="iconfont">&#xe613;&nbsp;&nbsp;0791-96999&nbsp;&nbsp;
+            &#xe6c6;&nbsp;&nbsp;
+            &#xe614;&nbsp;&nbsp;
+            &#xe64a;&nbsp;&nbsp; &#xe6cb;</p>
+        <p class="iconfont">Copyright &copy;&nbsp;杨培锋&欧阳子怡
+            &nbsp;&nbsp;赣ICP备13007076号&nbsp;&nbsp; 
+            &#xe502;&nbsp;赣公网安备&nbsp;&nbsp;36010302000118号</p>
+    </div>
+    <div id="aside">
+        <ul>
+            <li><p class="iconfont">&#xe679;</p><div>行程查询</div></li>
+            <li><p class="iconfont">&#xe630;</p><div>线路图</div></li>
+            <li><p class="iconfont">&#xe642;</p><div>时刻表</div></li>
+            <li><p class="iconfont">&#xe613;</p><div>0791-96999</div></li>
+            <li><p class="iconfont">&#xe64a;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe68d;</p><div>二维码</div></li>
+            <li><p class="iconfont">&#xe6cb;</p><div>二维码</div></li>
+            <li><a href="#"><p class="iconfont">&#xe519;</p></a><div>回到顶部</div></li>
+            <script>
+                $(function(){
+                    $("#aside ul li").each(function(index,element){
+                    element.click(function(){
+                        $("html,body").animate({scrollTop:0},
+                        {duration:500,easing:"swing"})
+                        return false
+                    })
+                })
+                })
+            </script>
+        </ul>
+        <script>
+            $(function(){
+                $('#aside>ul>li').mouseover(function(){
+                    $(this).children('div').stop().slideDown(200)
+                })
+                $('#aside>ul>li').mouseout(function(){
+                    $(this).children('div').stop().slideUp(200)
+                })
+            })
+            $(document).scroll(function(){
+                var scroH=$(document).scrollTop();
+                var aside=$("#aside")
+                if(scroH>700){
+                    aside.fadeIn(1000)
+                }
+                if(scroH<=700){
+                    aside.fadeOut(1000)
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>

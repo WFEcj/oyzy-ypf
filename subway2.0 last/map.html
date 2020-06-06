@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>站点详情检索</title>
+<script type="text/javascript" src="https://api.map.baidu.com/api?type=subway&v=1.0&ak=mp8pREDFlCXluHI3QEBWPTfzgGiAR8N3"> </script>
+<style type="text/css">
+    #container{height:100%}
+</style>
+</head>
+<body>
+<div id="container"></div>
+<div></div>
+<script type="text/javascript">
+
+    var subwayCityName = '南昌';
+    var list = BMapSub.SubwayCitiesList;
+    var subwaycity = null;
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].name === subwayCityName) {
+            subwaycity = list[i];
+            break;
+        }
+    }
+    var subway = new BMapSub.Subway('container', subwaycity.citycode);
+    var zoomControl  = new BMapSub.ZoomControl({
+        anchor: BMAPSUB_ANCHOR_BOTTOM_RIGHT,
+        offset: new BMapSub.Size(10,100)
+    });
+    subway.addControl(zoomControl);
+    subway.addEventListener('tap', function() {
+        var detail = new BMapSub.DetailInfo(subway);
+        detail.search('地铁大厦');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*********************************************
+******************页面初始化样式****************
+**********************************************/
+
+body {
+    font: 16px/1.5 "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #333;
+}
+html, body, h1, h2, h3, h4, h5, h6, div, ol, ul,
+ li, dl, dt, dd, table, caption, tr, th, td, span, p, a, b, 
+ u, i, em, img, iframe, fieldset, form, label, legend, 
+ input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ol, ul, li {
+    list-style: none;
+}
